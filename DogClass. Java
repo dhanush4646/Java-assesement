@@ -1,0 +1,31 @@
+
+}
+class Dog{
+	public void dogBark()
+	{
+		System.out.println("Dog is Barking");
+	}
+	public void dogEat()
+	{
+		System.out.println("Dog is Eating");
+	}
+}
+class Labrador extends Dog{
+	public void dogBark()
+	{
+		System.out.println("Labrador Barking");
+	}
+	public void dogEat()
+	{
+		System.out.println("Labrador Eating");
+	}
+}
+public class SampleDog{
+	public static void main(String[] args) {
+		Labrador ld=new Labrador();
+		ld.dogEat();
+		ld.dogBark();
+		Dog c1=new Dog();
+		c1.dogBark();
+		c1.dogEat();
+	}

@@ -1,0 +1,17 @@
+public class TestOverride {
+	public void sayHello(String a)
+	{
+		System.out.println("hello "+a);
+	}
+	public void sayHello()
+	{
+		System.out.println("HELLO GHF");
+	}
+	public static void main(String[] args) {
+		String s="hi";
+		TestOverride d2=new TestOverride();
+		d2.sayHello();
+		d2.sayHello(s);
+		
+	}
+}

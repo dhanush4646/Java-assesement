@@ -1,0 +1,62 @@
+public class TestVehicle {
+	public static void main(String[] args)
+	{
+		Benz b1=new Benz();
+		Ducati d1=new Ducati();
+		Hero h1=new Hero();
+		Ninja n1=new Yamaha();
+		b1.Name();
+		b1.Motors();
+		b1.Engine();
+		d1.Name();
+		d1.Motors();
+		d1.Engine();
+		h1.Name();
+		h1.Motors();
+		h1.Engine();
+		n1.Name();
+		n1.Motors();
+		n1.Engine();
+	}
+}
+class Vehicle{
+	public void Motors() {
+	System.out.println(" Vehicle");
+	}
+}
+class twoWheeler extends Vehicle{
+	public void Engine()
+	{
+		System.out.println("Two Wheeler Engine Starts");
+	}
+}
+class fourWheeler extends Vehicle{
+	public void Engine()
+	{
+		System.out.println("Four Wheeler Engine Starts");
+	}
+}
+class Hero extends twoWheeler{
+	public void Name()
+	{
+		System.out.print("Hero");
+	}
+}
+class Ninja extends twoWheeler{
+	public void Name()
+	{
+		System.out.print("Ninja");
+	}
+}
+class Ducati extends fourWheeler{
+	public void Name()
+	{
+		System.out.print("Ducati");
+	}
+}
+class Benz extends fourWheeler{
+	public void Name()
+	{
+		System.out.print("Benz");
+	}
+}
